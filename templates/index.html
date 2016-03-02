@@ -8,35 +8,28 @@
 <div class="div">
 <table class="gridtable">
   <tr>
-    <th colspan="10">SQL Nodes</th>
+    <th colspan="10">Mysql information</th>
   </tr>
   <tr>
-    <th rowspan="2">Intance1</th>
-    <th rowspan="2">Intance2</th>
-    <th colspan="3">Intance3</th>
-    <th colspan="3">Intance4</th>
-    <th rowspan="2">Intance5</th>
-    <th rowspan="2">Intance6</th>
+    <th rowspan="2">Intance</th>
+    <th rowspan="2">Mysql Status</th>
+    <th colspan="3">Host Stats</th>
+    <th colspan="3">Server Stats</th>
+    <th rowspan="2">Version</th>
+    <th rowspan="2">Last Updated</th>
   </tr>
   <tr>
-    <th>Intancea</th>
-    <th>Intanceb</th>
-    <th>Intanceb</th>
-    <th>Intanced</th>
-    <th>Intancee</th>
-    <th>Intancef</th>
+    <th>Ping(us)</th>
+    <th>CPU Util(%)</th>
+    <th>Uptime</th>
+    <th>Queries/s</th>
+    <th>Connections</th>
+    <th>Uptime</th>
   </tr>
   <tr>
-    <td>IntanceA</td>
-    <td>IntanceB</td>
-    <td>IntanceC</td>
-    <td>IntanceD</td>
-    <td>IntanceE</td>
-    <td>IntanceF</td>
-    <td>IntanceF</td>
-    <td>IntanceF</td>
-    <td>IntanceF</td>
-    <td>IntancesdfsdfsdfsdfF</td>
+  {% for item in navigation %}
+    <td>{{item}}</td>
+  {% endfor %}
   </tr>
 </table>
 </div>
